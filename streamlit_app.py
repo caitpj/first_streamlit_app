@@ -29,5 +29,5 @@ streamlit.text(fruityvice_response.json())
 
 # normalize the json data into a flat table
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
-#streamlit.dataframe(fruityvice_normalized)
+# outputs the table as a dataframe
+streamlit.dataframe(fruityvice_normalized)
